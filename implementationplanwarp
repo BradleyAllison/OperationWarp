@@ -1,0 +1,19 @@
+Operation Warp
+Story line: Traveling from planet Earth to gather resources and buy/sell goods. Along the way there will be surprises that can benefit the user or create difficulty in continuing the game.
+
+Design plan:
+1. ship_info
+	-capacity
+	-fuel
+	-speed
+2. map_info
+	-planet_location
+	-planet_info
+	-resource_prices
+3. player_info
+	-age
+	-wealth
+	-time
+4. travel_info
+	-distance_to_planet
+	-random_event (i.e. wormholes to the successful/unsuccessful ending of the game, prize money, resources/fuel)
