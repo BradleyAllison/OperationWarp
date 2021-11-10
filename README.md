@@ -1,2 +1,3 @@
 # OperationWarp
-Space travel game
+
+Space travel/adventure game
