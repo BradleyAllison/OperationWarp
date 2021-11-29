@@ -11,14 +11,21 @@ def wait_for_input():
 def display_options():
     display("0. Quit")
 
-def elicit_menu_input():
-    print("\nEnter an option from the menu: ", end="")
-    response = input()
+def elicit_int(lo, hi):
+    while True:
+        print("\nEnter an option from the menu between " + str(lo) + " and " + str(hi) + ": ", end="")
+        response = input()
 
-    if response.isdigit():
-        return int(response)
-    else:
-        return -1
+        if response.isdigit():
+            int_response = int(response)
+
+            if lo <= int_response and int_response <= hi:
+                return int_response
+            
+        print("Invalid input, please enter a number from the list: ")
+
+def elicit_menu_input():
+    return elicit_int(0, 0)
 
 def handle_main_menu_response(response):
     if response == 0:
