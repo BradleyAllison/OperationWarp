@@ -1,6 +1,6 @@
 from interface import *
 from main_menu import main_menu
-
+from planet import init as planet_init
 
 def main():
     print("Welcome traveller, this is operation warp!\n Are you ready to travel the galaxy and make some credits?")
@@ -14,4 +14,5 @@ def main():
 
 
 if __name__ == "__main__":
+    planet_init()
     main()
