@@ -1,4 +1,6 @@
 from interface import *
+from travel_menu import travel_menu
+
 import planet
 
 def display_options():

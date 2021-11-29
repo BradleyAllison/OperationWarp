@@ -3,7 +3,7 @@ import planet
 
 def display_options():
     display_str = ""
-    displat_str += " 0. Cancel Travel"
+    display_str += " 0. Cancel Travel"
 
     display(display_str)
 
