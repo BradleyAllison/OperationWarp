@@ -8,11 +8,13 @@ def display_options():
     display(display_str)
 
 def elicit_menu_input():
-    return elicit_int(0, 1)
+    return elicit_int(0, planet.total_planets() - 1)
 
 def handle_main_menu_response(response):
     if response == 0:
         return True
+    else:
+        ship.travel_to(response)
 
     return False
 
